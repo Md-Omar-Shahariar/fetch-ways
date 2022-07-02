@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Quote from "./components/fetch/Quote";
+import Axios from "./components/Axios/Axios";
+import Swr from "./components/SWR/Swr";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>4 ways to fetch</h1>
+      <Quote></Quote>
+      <Axios></Axios>
+      <Swr></Swr>
     </div>
   );
 }
